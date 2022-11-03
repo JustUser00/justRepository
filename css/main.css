@@ -1,0 +1,106 @@
+html,body{
+    height: 100%;
+}
+canvas {
+	cursor: crosshair;
+	display: block;
+    background: url(../images/bg.jpeg)50%0;
+    background-repeat: no-repeat;
+background-size: cover;
+   position: absolute;
+   width: 100%;
+height: 100%;
+z-index: 2;
+}
+body{
+padding: 0;
+margin: 0;
+overflow: hidden;
+}
+
+.Alexandra{
+display: flex;
+flex-direction: column;
+/* padding-top: 150px; */
+position: relative;
+z-index: 3;
+top: 100px;
+}
+h1{
+    background: url(../Unknown.jpeg) repeat-x;
+    color: transparent;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 80px;
+  font-weight: 600;
+  background-size:contain;
+  padding: 0;
+  margin-top: 0;
+ margin-bottom: 25px;
+ animation: gradient 5s  ease infinite;
+
+
+
+  /* line-height: 0; */
+}
+.top{
+    animation: animationH1 2s ease-in-out;
+}
+h2{
+    text-align: center;
+    font-size: 40px;
+    /* margin-top: 0; */
+    /* margin-bottom: 0; */
+    /* padding-bottom: 15px; */
+    position: relative;
+    background: linear-gradient(45deg,#d9a7c7,#fffcdc);
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-size:contain;
+    color: transparent;
+    margin-bottom: 25px;
+    margin-top: 0;
+   
+}
+.left{
+    animation: animation 7s ease-in-out;
+}
+.right{
+    animation: animationR 9s ease-in-out; 
+}
+.bottom{
+    animation: animationB 10s ease-in-out; 
+}
+@keyframes gradient{
+0%{
+    background-position: left 0 top 0;
+}
+50%{
+    background-position: left 150px top 8px;
+}
+100%{
+    background-position: left 300px top 0;
+}
+}
+@keyframes animation{
+   0%{
+    transform: translateX(-2000px);
+   } 
+}
+@keyframes animationR{
+    0%{
+     transform: translateX(10000px);
+    } 
+ }
+ @keyframes animationB{
+    0%{
+        transform: translateY(10000px);
+    }
+ }
+ @keyframes animationH1{
+    0%{
+        transform: translateY(-700px);
+    }
+ }
